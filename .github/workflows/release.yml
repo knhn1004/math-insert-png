@@ -1,0 +1,36 @@
+name: Release
+
+on:
+  push:
+    tags:
+      - 'v*'
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    name: Build & Release
+    runs-on: macos-14
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Select Xcode
+        run: sudo xcode-select -s /Applications/Xcode_15.4.app
+
+      - name: Build release
+        run: make release
+
+      - name: Archive
+        run: make archive
+
+      - name: Package app
+        run: |
+          cd build/MathInsert.xcarchive/Products/Applications
+          zip -r ../../../../MathInsert.zip MathInsert.app
+
+      - name: Create GitHub Release
+        uses: softprops/action-gh-release@v2
+        with:
+          files: build/MathInsert.zip
+          generate_release_notes: true
