@@ -9,7 +9,7 @@
 </p>
 
 <p align="center">
-  <a href="https://github.com/oliverfoggin/math-insert-png/actions/workflows/ci.yml"><img src="https://github.com/oliverfoggin/math-insert-png/actions/workflows/ci.yml/badge.svg" alt="CI"></a>
+  <a href="https://github.com/knhn1004/math-insert-png/actions/workflows/ci.yml"><img src="https://github.com/knhn1004/math-insert-png/actions/workflows/ci.yml/badge.svg" alt="CI"></a>
   <img src="https://img.shields.io/badge/tests-13%20passed-brightgreen" alt="Tests">
   <img src="https://img.shields.io/badge/platform-macOS%2012%2B-blue" alt="Platform">
   <img src="https://img.shields.io/badge/swift-5.0-F05138" alt="Swift">
@@ -55,12 +55,12 @@ A lightweight macOS menu bar app that renders LaTeX math expressions and copies 
 
 ### From Releases
 
-Download the latest `.zip` from [Releases](https://github.com/oliverfoggin/math-insert-png/releases), unzip, and drag `MathInsert.app` to your Applications folder.
+Download the latest `.zip` from [Releases](https://github.com/knhn1004/math-insert-png/releases), unzip, and drag `MathInsert.app` to your Applications folder.
 
 ### Build from Source
 
 ```bash
-git clone https://github.com/oliverfoggin/math-insert-png.git
+git clone https://github.com/knhn1004/math-insert-png.git
 cd math-insert-png
 make build
 make run
