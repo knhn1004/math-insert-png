@@ -33,23 +33,9 @@ A lightweight macOS menu bar app that renders LaTeX math expressions and copies 
 
 ## Screenshot
 
-```
- +----------------------------------+
- |  MATH INSERT          [COPY PNG] |
- |  \frac{a}{b} + \sqrt{x}         |
- |  +----------------------------+  |
- |  |          a                 |  |
- |  |         --- + sqrt(x)     |  |
- |  |          b                 |  |
- |  +----------------------------+  |
- |  SIZE  [========|----]   32px    |
- |  EXPORT  [A|A]                   |
- |  --------------------------------|
- |  HISTORY                  CLEAR  |
- |  \int_0^1 x^2 dx                |
- |  e^{i\pi} + 1 = 0               |
- +----------------------------------+
-```
+<p align="center">
+  <img src="assets/screenshot.png" width="400" alt="MathInsert screenshot">
+</p>
 
 ## Install
 
